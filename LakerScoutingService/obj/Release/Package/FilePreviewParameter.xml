@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="LakerScouting" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\cross\\Documents\\GitHub\\LakerScouting_Runtime\\LakerScoutingService\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\cross\\Documents\\GitHub\\LakerScouting_Runtime\\LakerScoutingService\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="MS_NotificationHubConnectionString-Web.config Connection String" description="" value="Endpoint=sb://[your namespace].servicebus.windows.net;SharedSecretIssuer=owner;SharedSecretValue=[your secret]" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\cross\\Documents\\GitHub\\LakerScouting_Runtime\\LakerScoutingService\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MS_NotificationHubConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="MS_TableConnectionString-Web.config Connection String" description="" value="Data Source=tcp:lakerrobotics.database.windows.net,1433;Initial Catalog=&quot;Scouting Database&quot;;User ID=lakeradmin@lakerrobotics;Password=50Robotics53" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\cross\\Documents\\GitHub\\LakerScouting_Runtime\\LakerScoutingService\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MS_TableConnectionString']/@connectionString" />
+  </parameter>
+</parameters>
